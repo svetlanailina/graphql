@@ -1,0 +1,18 @@
+spring:
+  graphql:
+    cors:
+      max-age: 1800s
+      allowed-methods:
+        -GET
+        -POST
+        -PUT
+        -PATCH
+    path: /api/graphql
+    graphiql:
+      enabled: true
+      path: /api/graphiql
+
+logging:
+  level:
+    org:
+      springframework: DEBUG
